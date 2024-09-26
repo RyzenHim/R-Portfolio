@@ -1,14 +1,33 @@
 .active {
-  @apply w-full h-[100vh] backdrop-blur-xl absolute top-[-20px] left-0 right-0 bottom-0 z-[-1]  block duration-500;
-  /* transition: backdrop-filter 1s ease-in-out; */
+  @apply w-full h-[101vh] backdrop-blur-xl absolute top-[-20px] left-0 right-0 bottom-0 z-[-1]  block;
+  animation: blurareaAnimate .5s ease-in;
 }
 .notActive {
-  @apply hidden duration-500;
-  /* transition: backdrop-filter 1s ease-in-out; */
+  @apply backdrop-blur-xl absolute left-0 right-0  z-[-1] top-[-1000px;];
+  animation: blurareaAnimatereverse 5s ease-out;
 }
 .navContentHidden {
   display: none;
 }
 .navContentShown {
   display: block;
+}
+
+@keyframes blurareaAnimate {
+  from {
+
+    top: -1000px;
+  }
+  to {
+
+    top: -20px;
+  }
+}
+@keyframes blurareaAnimatereverse {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
 }
