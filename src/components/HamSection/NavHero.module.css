@@ -1,0 +1,11 @@
+.NavHeroImgDiv {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.NavHeroImg {
+  /* mix-blend-mode: screen; */
+  /* mix-blend-mode: screen; */
+  filter: drop-shadow(0px 0px 100px #050604);
+  width: 650px;
+}

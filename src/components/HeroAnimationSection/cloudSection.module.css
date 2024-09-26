@@ -1,0 +1,94 @@
+.cloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* z-index: 50; */
+  fill-opacity: 0;
+  filter: opacity(0.5);
+  /* display: none; */
+  /* border: 1px solid red; */
+}
+.lowercloud {
+  position: absolute;
+  top: 65%;
+  right: 0;
+  width: 50vw;
+  filter: opacity(0.5);
+  /* border: 1px solid red; */
+}
+.cloud0 {
+  position: absolute;
+  top: -90px;
+  left: 0;
+  /* z-index: 50; */
+  fill-opacity: 0;
+  filter: opacity(0.5);
+  /* display: none; */
+  /* border: 1px solid red; */
+  z-index: 1;
+  transform: scaleX(-1);
+}
+.cloudTwo {
+  position: absolute;
+  /* bottom: 100vh; */
+  top: 50vh;
+  right: 0vw;
+  filter: opacity(0.5);
+  z-index: 2;
+  transform: scale(0.8);
+
+  /* border: 1px solid red; */
+}
+.cloudTo {
+  position: absolute;
+  /* bottom: 100vh; */
+  top: 50vh;
+  right: 30vw;
+  filter: opacity(0.5);
+  z-index: 2;
+  transform: scale(0.8);
+  transform: X(-1);
+  /* border: 1px solid red; */
+}
+
+.cloud3 {
+  position: absolute;
+  top: 0;
+  /* z-index: 50; */
+  filter: brightness(0.2);
+  z-index: 0;
+  /* border: 1px solid red; */
+}
+.cloudSmallDark {
+  position: absolute;
+  top: 60vh;
+  right: 30vw;
+  filter: opacity(1);
+  z-index: 0;
+  filter: brightness(0.6);
+  transform: scaleX(-1);
+  width: 200px;
+  /* border: 1px solid red; */
+}
+.cloudSmallDark2 {
+  position: absolute;
+  top: 85vh;
+  right: 48vw;
+  /* filter: opacity(1); */
+  z-index: 0;
+  filter: brightness(0.9);
+  transform: scaleX(-1);
+  width: 200px;
+  /* border: 1px solid red; */
+}
+.cloudSmallDark3 {
+  position: absolute;
+  top: 85vh;
+  right: 25vw;
+  /* filter: opacity(1); */
+  z-index: 0;
+  filter: brightness(0.6);
+  transform: scaleX(-1);
+  width: 200px;
+  /* border: 1px solid red; */
+}

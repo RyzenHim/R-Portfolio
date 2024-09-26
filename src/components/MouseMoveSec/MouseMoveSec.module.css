@@ -1,0 +1,9 @@
+.mouseMoveDiv {
+  position: fixed;
+  color: chartreuse;
+  top: 0%;
+  left: 0%;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  z-index: 30;
+}

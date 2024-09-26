@@ -1,0 +1,14 @@
+.active {
+  @apply w-full h-[100vh] backdrop-blur-xl absolute top-[-20px] left-0 right-0 bottom-0 z-[-1]  block duration-500;
+  /* transition: backdrop-filter 1s ease-in-out; */
+}
+.notActive {
+  @apply hidden duration-500;
+  /* transition: backdrop-filter 1s ease-in-out; */
+}
+.navContentHidden {
+  display: none;
+}
+.navContentShown {
+  display: block;
+}

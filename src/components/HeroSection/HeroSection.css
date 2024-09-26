@@ -1,0 +1,3 @@
+.name {
+  @apply text-center text-8xl font-extrabold tracking-wider text-transparent text-shadow shadow-slate-900 uppercase text-[#FF4500];
+}

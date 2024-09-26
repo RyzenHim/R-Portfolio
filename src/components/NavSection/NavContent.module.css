@@ -1,0 +1,44 @@
+.dot {
+  width: 5px;
+  aspect-ratio: 1;
+  position: absolute;
+  background-color: orangered;
+  /* box-shadow: 50 50px 50px orangered; */
+  border-radius: 100px;
+  z-index: 1;
+  right: 0%;
+  top: 0%;
+  box-shadow: rgb(255, 255, 0) 0px 22px 70px 4px;
+  animation: moveDot 6s ease-in-out infinite;
+}
+@keyframes moveDot {
+  0% {
+    top: 0%;
+    right: 0%;
+  }
+  25% {
+    top: 0%;
+    right: 99%;
+  }
+  50% {
+    top: 100%;
+    right: 99%;
+  }
+  75% {
+    top: 99%;
+    right: 0%;
+  }
+  100% {
+    top: 0%;
+    right: 0%;
+  }
+}
+
+.shadow {
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background: radial-gradient(circle 350px at 0% 0%, #ffffff5c, #0c0d0dc9);
+}
+.notActive {
+  display: none;
+}
