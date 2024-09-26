@@ -6,8 +6,6 @@ import { useEffect, useRef } from "react";
 const MouseMoveSec = () => {
   const circle = useRef(null);
   const size = 35;
-  const color = "white";
-
   const mouse = useRef({
     x: 0,
     y: 0,
@@ -32,7 +30,7 @@ const MouseMoveSec = () => {
 
   return (
     <div
-      style={{ width: size, height: size, background: color }}
+      style={{ width: size, height: size }}
       ref={circle}
       className={styles.mouseMoveDiv}
     ></div>

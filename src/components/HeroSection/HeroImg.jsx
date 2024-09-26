@@ -1,12 +1,16 @@
+import styles from "./HeroImg.module.css";
+
 function HeroImg() {
   return (
     <>
-      <img
-        className="object-cover	h-[100vh]	 w-[100%] "
-        src="\asset\heroImg.jpg"
-        alt="heroImg"
-        srcset=""
-      />
+      <div className={styles.imgWrapper}>
+        <img
+          className="object-cover	h-[100vh]	 w-[100%] "
+          src="\asset\heroImg.jpg"
+          alt="heroImg"
+          srcset=""
+        />
+      </div>
     </>
   );
 }

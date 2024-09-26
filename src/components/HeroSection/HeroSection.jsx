@@ -7,7 +7,7 @@ function HeroSection() {
   return (
     <>
       <div className="bg-slate-400 h-[100vh] w-[100%] relative overflow-hidden">
-        <div className="absolute right-[15vw] w-fit top-[30vh] h-[40vh] flex flex-col justify-between border-solid z-[40]	 ">
+        <div className="absolute right-[15vw] w-fit top-[30vh] h-[40vh] flex flex-col justify-between border-solid z-[9]	 ">
           <div className="flex flex-col gap-2 ">
             <h2 className="text-2xl font-bold text-[#2C303C] shadow-slate-300">
               Hey I'm

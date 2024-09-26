@@ -21,7 +21,7 @@ function NavContent() {
 
   return (
     <div
-      className="  absolute z-[46] top-[1.5vh] h-12 left-[180px] "
+      className="  absolute z-[11] top-[2vh] h-12 left-[180px] "
       ref={navContentRef}
     >
       <div className={styles.dot}></div>

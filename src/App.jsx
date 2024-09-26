@@ -18,7 +18,7 @@ const SkillSection = lazy(() =>
 const MouseMoveSec = lazy(() =>
   import("./components/MouseMoveSec/MouseMoveSec.jsx")
 );
-
+const NavContent = lazy(() => import("./components/NavSection/NavContent.jsx"));
 function App() {
   // const [lodng, setLoading] = useState(false);
 
@@ -42,6 +42,7 @@ function App() {
     <>
       <Suspense fallback={<LoaderSection />}>
         <Nav />
+        <NavContent />
         <HeroSection />
         <AboutMeSection />
         <SkillSection />

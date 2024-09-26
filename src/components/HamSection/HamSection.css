@@ -1,38 +1,33 @@
-.hamburger {
-  cursor: pointer;
+.active {
+  @apply w-full h-[103vh] backdrop-blur-xl fixed top-[-20px] left-0 right-0 bottom-0 z-[12]  block;
+  animation: blurareaAnimate .5s ease-in;
 }
-
-.hamburger input {
+.notActive {
+  @apply backdrop-blur-xl absolute left-0 right-0  z-[-1] top-[-1000px;];
+  animation: blurareaAnimatereverse 5s ease-out;
+}
+.navContentHidden {
   display: none;
 }
-
-.hamburger svg {
-  /* The size of the SVG defines the overall size */
-  height: 3em;
-  /* Define the transition for transforming the SVG */
-  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+.navContentShown {
+  display: block;
 }
 
-.line {
-  fill: none;
-  stroke: orangered;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
-  /* Define the transition for transforming the Stroke */
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+@keyframes blurareaAnimate {
+  from {
 
-.line-top-bottom {
-  stroke-dasharray: 12 63;
-}
+    top: -1000px;
+  }
+  to {
 
-.hamburger input:checked + svg {
-  transform: rotate(-45deg);
+    top: -20px;
+  }
 }
-
-.hamburger input:checked + svg .line-top-bottom {
-  stroke-dasharray: 20 300;
-  stroke-dashoffset: -32.42;
+@keyframes blurareaAnimatereverse {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
 }
