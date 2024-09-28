@@ -1,16 +1,36 @@
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
-const AboutMeSection = () => {
+const AboutMeSection = (prop) => {
   const textRef = useRef(null);
+
+  const textElemnt = textRef.current;
+  const bodElm = prop.ref;
+  console.log(bodElm);
   useEffect(() => {
-    const textElemnt = textRef.current;
-    gsap.fromTo(
-      { textElemnt, x: window.innerWidth },
-      { x: -textElemnt.offsetWidth, ease: "none", duration: 10 },
-      []
-    );
-  });
+    gsap.to(textElemnt, {
+      transform: "translateX(-50%)",
+      // y: 100,
+      duration: 5,
+      ease: "elastic.out(1, 0.3)",
+      scrollTrigger: {
+        trigger: textRef,
+        scroller: bodElm,
+        markers: true,
+        scrub: true,
+        // markers: { start: "start", end: "end" },
+        // markers: { start: "0%", end: "100%" },
+        // markers: { start: "0%", end: "100%", labels: { 0: "start", 100: "end" } },
+        start: "top 80%",
+        end: "top 20%",
+        toggleActions: "restart pause reverse pause",
+      },
+    });
+    // useGSAP(() => {
+
+    // });
+  }, []);
 
   return (
     <>

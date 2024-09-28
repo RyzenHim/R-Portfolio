@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useRef } from "react";
 
 import { useState, useEffect } from "react";
 
@@ -20,6 +20,7 @@ const MouseMoveSec = lazy(() =>
 );
 const NavContent = lazy(() => import("./components/NavSection/NavContent.jsx"));
 function App() {
+  const bod = useRef(null);
   // const [lodng, setLoading] = useState(false);
 
   // useEffect(() => {
@@ -43,9 +44,11 @@ function App() {
       <Suspense fallback={<LoaderSection />}>
         <Nav />
         <NavContent />
-        <HeroSection />
-        <AboutMeSection />
-        <SkillSection />
+        <div ref={bod}>
+          <HeroSection />
+          <AboutMeSection />
+          <SkillSection />
+        </div>
         <MouseMoveSec />
       </Suspense>
     </>
